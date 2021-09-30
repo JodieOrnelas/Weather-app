@@ -11,27 +11,31 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
     <title>Weather app</title>
   </head>
-  <body>
+  <body class="body">
     <div class="app">
     <div class="container">
       <div class="weather">
         <img src="Weather.svg" alt="weather girl" width="150"/>
         <form>
           <div class="row">
-            <div class="col-9">
+            <div class="col-7">
               <input
                 type="search"
                 placeholder="Enter a city.."
-                class="form-control search-input"
+                class=" form-control search-input"
               />
             </div>
           </div>
-          <div class="col--3">
+          <div class="col-3">
             <input type="submit" class="btn btn-primary" value="Search" />
           </div>
         </form> 
+        <hr />
         <div class="weatherInfo">
         <div class="row">
           <div class="col-6">
@@ -60,15 +64,15 @@
           </div>
         </div>
         <footer>
-          This project was coded by <a href="https://github.com/JodieOrnelas">Jodie Ornelas</a> chek the code out <a href="https://github.com/JodieOrnelas/Weather-app">here</a>!
+          This project was coded by <a class="footerA"href="https://github.com/JodieOrnelas">Jodie Ornelas</a> check the code out <a class="footerA" href="https://github.com/JodieOrnelas/Weather-app">here</a>!
         </footer>
       </div>
 
       </div>
      
 
-    </div>
-  </div>
+    
+  </div></div>
     <script src="src/app.js"></script>
   </body>
 </html>
