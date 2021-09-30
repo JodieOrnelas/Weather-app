@@ -45,11 +45,22 @@
   border: none;
   height: 50px;
 }
-
+#tempNow {
+  font-size: 40px;
+}
 strong {
   color: #f76b8a;
 }
 
 footer {
   text-align: center;
+}
+
+.city {
+  font-style: capitalize;
+}
+
+.units {
+  font-size: 30px;
+  font-family: "Pacifico", cursive;
 }
