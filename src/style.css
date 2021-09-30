@@ -37,6 +37,15 @@
   height: 50px;
   line-height: 20px;
 }
+
+.btn:hover {
+  background: #66bfbf;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 10px;
+  border: none;
+  height: 50px;
+}
 .weather .btn {
   background: #66bfbf;
   font-weight: 700;
