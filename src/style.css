@@ -73,3 +73,7 @@ footer {
   font-size: 30px;
   font-family: "Pacifico", cursive;
 }
+
+.float-left {
+  float: left;
+}
