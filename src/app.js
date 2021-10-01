@@ -37,7 +37,6 @@ function formatDay(timestamp) {
 }
 
 function displayInfo(response) {
-  console.log(response);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#tempNow");
   let descriptionElement = document.querySelector("#description");
@@ -45,6 +44,8 @@ function displayInfo(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+
+  celciusTemperature = response.data.main.temp;
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -71,7 +72,28 @@ function search(city) {
   axios.get(url).then(displayInfo);
 }
 
+function displayFarenheitTemp(event) {
+  event.preventDefault();
+  let farenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#tempNow");
+  temperatureElement.innerHTML = Math.round(farenheitTemperature);
+}
+
+function displayCelciusTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#tempNow");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
+let celciusTemperature = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let farenheitLink = document.querySelector("#unitChangeF");
+farenheitLink.addEventListener("click", displayFarenheitTemp);
+
+let celciusLink = document.querySelector("#unitChangeC");
+celciusLink.addEventListener("click", displayCelciusTemp);
 
 search("New York");

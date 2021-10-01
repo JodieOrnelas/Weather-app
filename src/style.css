@@ -70,10 +70,30 @@ footer {
 }
 
 .units {
-  font-size: 30px;
+  font-size: 18px;
   font-family: "Pacifico", cursive;
 }
 
 .float-left {
   float: left;
+}
+
+#unitChangeF {
+  color: #f76b8a;
+  text-decoration: none;
+}
+
+#unitChangeF:hover {
+  color: #f76b8a;
+  text-decoration: underline;
+}
+
+#unitChangeC {
+  color: #749797;
+  text-decoration: none;
+}
+
+#unitChangeC:hover {
+  color: #749797;
+  text-decoration: underline;
 }
