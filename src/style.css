@@ -99,6 +99,7 @@ footer {
 }
 
 .weather-forecast {
+  margin-left: 55px;
   margin-top: 20px;
   text-align: center;
   color: #f76b8a;

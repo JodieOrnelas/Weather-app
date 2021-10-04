@@ -98,11 +98,10 @@ celciusLink.addEventListener("click", displayCelciusTemp);
 
 search("New York");
 
-//
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Tue", "Wed", "Fri", "Sat", "Sun"];
+  let days = ["Tue", "Wed", "Fri", "Thu", "Sat"];
 
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
