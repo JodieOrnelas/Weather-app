@@ -23,7 +23,7 @@
 .app {
   max-width: 800px;
   margin: 60px auto;
-  background-color: rgba(255, 255, 255, 10);
+  background-color: rgba(255, 255, 255, 25%);
 }
 
 .weather .search-input {
@@ -99,7 +99,6 @@ footer {
 }
 
 .weather-forecast {
-  margin-left: 55px;
   margin-top: 20px;
   text-align: center;
   color: #f76b8a;
@@ -111,6 +110,7 @@ footer {
   color: #749797;
 }
 
-.temp-min {
+.weather-forecast-temperature-min {
+  font-size: 14px;
   opacity: 0.6;
 }
